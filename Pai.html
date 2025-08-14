@@ -6,111 +6,60 @@
   <title>Minha Carta para o Pai</title>
   <meta name="description" content="Uma carta em forma de site, feita com carinho." />
   <meta name="theme-color" content="#111827" />
-  <!-- Open Graph (para compartilhar) -->
-  <meta property="og:title" content="Minha Carta para o Pai" />
-  <meta property="og:description" content="Uma carta em forma de site, feita com carinho." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="./imagem-compartilhamento.jpg" />
 
-  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            display: ["Poppins", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"],
-            body: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"],
+            display: ["Poppins", "sans-serif"],
+            body: ["Inter", "sans-serif"],
           }
         }
       }
     }
   </script>
-  <!-- Google Fonts (opcional) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* Efeito de digitação opcional: use a classe .typewriter no elemento */
-    .typewriter { 
-      overflow: hidden;
-      white-space: nowrap;
-      border-right: .15em solid currentColor;
-      animation: typing 3.2s steps(40, end), blink-caret .8s step-end infinite; 
-    }
-    @keyframes typing { from { width: 0 } to { width: 100% } }
-    @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: currentColor } }
-
-    /* Canvas de corações/partículas */
     #particles { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
-
-    /* Botões redondos flutuantes */
-    .fab { @apply fixed bottom-4 right-4 z-50 flex gap-3; }
-    .fab button { @apply rounded-full shadow-lg p-3 bg-white/80 backdrop-blur hover:bg-white transition; }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 font-body antialiased selection:bg-pink-500/40">
   <canvas id="particles" aria-hidden="true"></canvas>
 
-  <!-- Hero / Capa -->
   <header class="relative min-h-[85dvh] grid place-items-center overflow-hidden">
-    <img src="./sua-foto-capa.jpg" alt="Foto especial" class="absolute inset-0 h-full w-full object-cover opacity-40" />
     <div class="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950/50 to-slate-950"></div>
-
     <div class="relative z-10 max-w-3xl px-6 text-center">
-      <!-- EDITAR: Título principal -->
       <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
         Feliz Dia dos Pais, <span class="text-pink-400">Pai</span>!
       </h1>
-      <!-- EDITAR: Subtítulo -->
       <p class="mt-4 text-lg md:text-xl text-slate-300">
         Esta é a minha carta para você, feita com amor. ❤️
       </p>
-
-      <div class="mt-8 flex items-center justify-center gap-3">
-        <a href="#carta" class="inline-flex items-center gap-2 rounded-2xl bg-pink-500 px-6 py-3 text-base font-semibold shadow-lg shadow-pink-500/20 hover:bg-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-400">
-          Abrir minha carta
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-        </a>
-        <!-- Botão para rolar até a galeria (opcional) -->
-        <a href="#galeria" class="inline-flex items-center gap-2 rounded-2xl border border-white/15 px-6 py-3 text-base font-semibold hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20">
-          Nossas memórias
-        </a>
-      </div>
-
-      <!-- EDITAR: Frase curta em destaque -->
-      <p class="mt-8 text-sm text-slate-400">Role para baixo para descobrir 💌</p>
+      <a href="#carta" class="inline-flex items-center gap-2 mt-8 rounded-2xl bg-pink-500 px-6 py-3 text-base font-semibold shadow-lg shadow-pink-500/20 hover:bg-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-400">
+        Abrir minha carta
+      </a>
     </div>
   </header>
 
-  <!-- Carta -->
   <main id="carta" class="relative z-10">
     <section class="max-w-3xl mx-auto px-6 py-16">
       <div class="rounded-3xl bg-white/5 p-8 md:p-10 shadow-2xl ring-1 ring-white/10">
-        <!-- EDITAR: Saudação -->
         <h2 class="font-display text-3xl md:text-4xl font-bold">Pai,</h2>
-        <!-- EDITAR: Parágrafos da carta -->
         <div class="mt-6 space-y-4 leading-relaxed text-slate-200">
-          <p class="typewriter [animation-duration:4s]">
-            Hoje eu só quero te agradecer por tudo que você fez e faz por mim.
-          </p>
           <p>
-            Por cada conselho, cada abraço e cada momento ao meu lado. Você é o meu exemplo de força e carinho.
+            Feliz dias dos pais, que o senhor tenha tido um ótimo dia, me desculpe por não lhe desejar esse dia tão especial mais cedo, eu te amo pai, espero que fique mais tempo aqui para celebrarmos algum dia desses denovo.
+            Te amo!❤
           </p>
-          <p>
-            Prometo estar sempre com você, do seu lado, torcendo e cuidando, assim como você sempre fez por mim.
-          </p>
-          <p class="font-semibold text-pink-300">Te amo, pai! ❤️</p>
         </div>
-
-        <!-- EDITAR: Assinatura -->
         <div class="mt-8 text-right">
           <p class="text-slate-400">Com amor,</p>
-          <p class="font-display text-xl">[Seu Nome]</p>
+          <p class="font-display text-xl">[Murillo]</p>
         </div>
-
-        <!-- Botões de ações -->
         <div class="mt-8 flex flex-wrap items-center gap-3">
           <button id="toggle-music" class="rounded-2xl bg-white/10 px-4 py-2 text-sm font-medium hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/20">
             Tocar música
@@ -118,47 +67,33 @@
           <button id="toggle-particles" class="rounded-2xl bg-white/10 px-4 py-2 text-sm font-medium hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/20">
             Corações
           </button>
-          <a href="#galeria" class="rounded-2xl bg-white/10 px-4 py-2 text-sm font-medium hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/20">
-            Ver fotos
-          </a>
         </div>
       </div>
     </section>
 
-    <!-- Galeria (opcional) -->
     <section id="galeria" class="max-w-6xl mx-auto px-6 pb-20">
       <h3 class="font-display text-2xl md:text-3xl font-bold">Nossas memórias</h3>
-      <p class="mt-2 text-slate-400">Substitua as imagens abaixo pelas suas fotos favoritas.</p>
       <div class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <!-- EDITAR: Substitua os src pelas suas imagens -->
-        <img src="./foto-1.jpg" alt="Memória 1" class="h-40 w-full rounded-2xl object-cover" />
-        <img src="./foto-2.jpg" alt="Memória 2" class="h-40 w-full rounded-2xl object-cover" />
-        <img src="./foto-3.jpg" alt="Memória 3" class="h-40 w-full rounded-2xl object-cover" />
-        <img src="./foto-4.jpg" alt="Memória 4" class="h-40 w-full rounded-2xl object-cover" />
-        <img src="./foto-5.jpg" alt="Memória 5" class="h-40 w-full rounded-2xl object-cover" />
-        <img src="./foto-6.jpg" alt="Memória 6" class="h-40 w-full rounded-2xl object-cover" />
-        <img src="./foto-7.jpg" alt="Memória 7" class="h-40 w-full rounded-2xl object-cover" />
-        <img src="./foto-8.jpg" alt="Memória 8" class="h-40 w-full rounded-2xl object-cover" />
+        <img src="Camisa-AmarelaPai.jpg" alt="Memória 1" class="h-40 w-full rounded-2xl object-cover" />
+        <img src="Doisdebrandofazendobico.jpg" alt="Memória 2" class="h-40 w-full rounded-2xl object-cover" />
+        <img src="Murillonenem.jpg" alt="Memória 3" class="h-40 w-full rounded-2xl object-cover" />
+        <img src="eueoutro.jpg" alt="Memória 4" class="h-40 w-full rounded-2xl object-cover" />
+        <img src="eumaisnovo.jpg" alt="Memória 5" class="h-40 w-full rounded-2xl object-cover" />
+        <img src="osdoisjuntos.jpg" alt="Memória 6" class="h-40 w-full rounded-2xl object-cover" />
       </div>
     </section>
   </main>
 
-  <!-- Rodapé simples -->
   <footer class="border-t border-white/10 py-8">
     <div class="max-w-3xl mx-auto px-6 text-center text-sm text-slate-400">
-      Feito com amor por <span class="font-semibold text-slate-200">[Seu Nome]</span> — <span id="ano"></span>
+      Feito com amor por <span class="font-semibold text-slate-200">[Murillo]</span> — <span id="ano"></span>
     </div>
   </footer>
 
-  <!-- Áudio (substitua o arquivo) -->
-  <audio id="bg-music" preload="auto" src="./sua-musica.mp3"></audio>
+  <audio id="bg-music" preload="auto" src="Musica.mp3"></audio>
 
-  <!-- JS: música, corações, utilidades -->
   <script>
-    // Ano atual no rodapé
     document.getElementById('ano').textContent = new Date().getFullYear();
-
-    // Música de fundo
     const audio = document.getElementById('bg-music');
     const btnMusic = document.getElementById('toggle-music');
     let musicOn = false;
@@ -168,77 +103,6 @@
         else { audio.pause(); btnMusic.textContent = 'Tocar música'; }
         musicOn = !musicOn;
       } catch (e) { console.warn('Interação do usuário necessária para tocar áudio.'); }
-    });
-
-    // Partículas de coração
-    const c = document.getElementById('particles');
-    const x = c.getContext('2d');
-    let hearts = [];
-    let particlesOn = false;
-    const btnParticles = document.getElementById('toggle-particles');
-
-    function resize() {
-      c.width = innerWidth; c.height = innerHeight;
-    }
-    addEventListener('resize', resize, { passive: true });
-    resize();
-
-    function spawnHeart() {
-      const s = Math.random() * 1.4 + 0.6; // tamanho
-      hearts.push({
-        x: Math.random() * c.width,
-        y: c.height + 10,
-        vx: (Math.random() - 0.5) * 0.6,
-        vy: - (Math.random() * 1.5 + 1.2),
-        size: 14 * s,
-        alpha: 1,
-      });
-    }
-
-    function drawHeart(hx, hy, size) {
-      x.save();
-      x.translate(hx, hy);
-      x.beginPath();
-      const s = size / 15;
-      // Desenho de coração com Bezier
-      x.moveTo(0, -5*s);
-      x.bezierCurveTo(5*s, -12*s, 15*s, -2*s, 0, 10*s);
-      x.bezierCurveTo(-15*s, -2*s, -5*s, -12*s, 0, -5*s);
-      x.fill();
-      x.restore();
-    }
-
-    function loop() {
-      if (!particlesOn) { requestAnimationFrame(loop); return; }
-      x.clearRect(0,0,c.width,c.height);
-      x.fillStyle = 'rgba(244, 114, 182, 0.9)'; // rosa
-      if (Math.random() < 0.4) spawnHeart();
-      hearts.forEach(h => {
-        h.x += h.vx;
-        h.y += h.vy;
-        h.alpha *= 0.996;
-      });
-      hearts = hearts.filter(h => h.y + h.size > -20 && h.alpha > 0.05);
-      x.globalAlpha = 0.7;
-      hearts.forEach(h => drawHeart(h.x, h.y, h.size));
-      x.globalAlpha = 1;
-      requestAnimationFrame(loop);
-    }
-    requestAnimationFrame(loop);
-
-    btnParticles?.addEventListener('click', () => {
-      particlesOn = !particlesOn;
-      btnParticles.textContent = particlesOn ? 'Parar corações' : 'Corações';
-      if (particlesOn) loop(); else { x.clearRect(0,0,c.width,c.height); hearts = []; }
-    });
-
-    // Role suave para links de âncora
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', (e) => {
-        const id = a.getAttribute('href').slice(1);
-        const el = document.getElementById(id);
-        if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-      });
     });
   </script>
 </body>
